@@ -213,11 +213,24 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 Hero
 ========================================================================== */
 .hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
-.hero h1 { font-size: 40px; letter-spacing: 12px; margin: 10px; }
-.hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero p { letter-spacing: 1px; }
+.hero h1 { font-size: 70px; letter-spacing: 12px; margin: 10px; color: #000000;}
+.hero h1 span { color: #ffffff; display: inline-block; }
+.hero p { letter-spacing: 1px; color:#ffffff; }
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 /* ==========================================================================
 Intro
 ========================================================================== */
@@ -314,7 +327,7 @@ ul.legals li:last-child::after { content: ""; }
 FlexSlider Custom CSS
 ========================================================================== */
 #servicesSlider { margin-top: 70px; }
-ul.slides li { margin-bottom: 20px; }
+ul.slides li { margin-bottom: 80px; }
 /* ==========================================================================
 Waypoints
 ========================================================================== */
@@ -324,3 +337,120 @@ Waypoints
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 .wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
 .wp5 {height: 100%; width: 50%;}
+
+/* ==============================GYAN ================================*/
+
+
+img.round {
+	border-radius: 20em;
+	height: 500px;
+}
+
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.ch-item {
+	width: 384px;
+	height: 384px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+	box-shadow:
+		inset 0 0 0 16px rgba(255,255,255,0.4),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 {
+	background-image: url(../img/team-01.png);
+	background-repeat: no-repeat;
+}
+
+.ch-img-2 {
+	background-image: url(../img/team-02.png);
+	background-repeat: no-repeat;
+}
+
+.ch-img-3 {
+	background-image: url(../img/team-03.png);
+	background-repeat: no-repeat;
+}
+
+.ch-info {
+	position: absolute;
+	background: rgba(24,79,70, 0.5);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 150px 0 0 0;
+	height: 140px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 0 20px;
+	margin: 30px 30px;
+	font-size: 12px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+    display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	/*font-size: 9px;*/
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+
+.ch-item:hover {
+	box-shadow:
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
