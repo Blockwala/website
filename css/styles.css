@@ -379,17 +379,22 @@ img.round {
 }
 
 .ch-img-1 {
-	background-image: url(../img/team-01.png);
+	background-image: url(../img/team-01);
 	background-repeat: no-repeat;
 }
 
 .ch-img-2 {
-	background-image: url(../img/team-02.png);
+	background-image: url(../img/team-02);
 	background-repeat: no-repeat;
 }
 
 .ch-img-3 {
-	background-image: url(../img/team-03.png);
+	background-image: url(../img/team-03);
+	background-repeat: no-repeat;
+}
+
+.ch-img-4 {
+	background-image: url(../img/team-04.jpg);
 	background-repeat: no-repeat;
 }
 
