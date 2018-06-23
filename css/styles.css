@@ -198,6 +198,8 @@ h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px
   font-family: 'Varela Round', sans-serif;
 }
 
+
+
 .navbar_without_background{
   color:#FFFFFF;
   border-radius: 15px;
@@ -248,6 +250,89 @@ Hero
   background-repeat: no-repeat;
 }
 
+.ch-info p{
+white-space: normal;
+}
+
+.medium{
+  background: green;
+  color: white;
+}
+.telegram{
+  background: #55ACEE;
+  color: white;
+}
+
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 20px;
+  padding: 4px ;
+  width: 190px;
+  position: fixed;
+  right: -152px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.stickyToolbar .fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  size:100px;
+  background: #3B5998;
+  color: white;
+  top: 160px;
+
+}
+
+.float-tw {
+  top: 215px;
+  background: #55ACEE;
+  color: white;
+}
+
+.float-gp {
+  top: 270px;
+  background: #dd4b39;
+  color: white;
+}
+
+.float-md {
+  top: 325px;
+  background: #bb0000;
+  color: white;
+}
+
+.float-tg {
+  top: 380px;
+  background: #55ACEE;
+  color: white;
+}
+
 
 
 /* ==========================================================================
@@ -259,7 +344,8 @@ h1.arrow { font-size: 15px; text-transform: uppercase; color: #353535; letter-sp
 /* ==========================================================================
 Features
 ========================================================================== */
-.features-wrapper, .team-wrapper { margin: 70px 0 0; }
+.team-wrapper { margin: 70px 0 0;width: 100%;height:100%}
+.features-wrapper { margin: 70px 0 0; }
 .shadow { text-shadow: rgb(55, 181, 161) 1px 1px, rgb(55, 181, 161) 2px 2px, rgb(55, 181, 161) 3px 3px, rgb(55, 181, 161) 4px 4px, rgb(55, 181, 161) 5px 5px, rgb(55, 181, 161) 6px 6px, rgb(55, 181, 161) 7px 7px, rgb(55, 181, 161) 8px 8px, rgb(55, 181, 161) 9px 9px, rgb(55, 181, 161) 10px 10px, rgb(55, 181, 161) 11px 11px, rgb(55, 181, 161) 12px 12px, rgb(55, 182, 162) 13px 13px, rgb(55, 183, 163) 14px 14px, rgb(56, 184, 164) 15px 15px, rgb(56, 185, 165) 16px 16px, rgb(56, 186, 166) 17px 17px, rgb(57, 187, 167) 18px 18px, rgb(57, 188, 168) 19px 19px, rgb(57, 189, 169) 20px 20px, rgb(58, 191, 170) 21px 21px, rgb(58, 192, 171) 22px 22px, rgb(58, 193, 172) 23px 23px, rgb(59, 194, 173) 24px 24px, rgb(59, 195, 174) 25px 25px, rgb(59, 196, 175) 26px 26px, rgb(60, 197, 176) 27px 27px, rgb(60, 198, 177) 28px 28px, rgb(60, 199, 178) 29px 29px, rgb(61, 201, 179) 30px 30px; }
 .icon { height: 175px; width: 175px; line-height: 175px; max-width: 100%; background: #3dc9b3; border-radius: 50%; -o-border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; display: block; color: #fff; font-size: 55px; text-align: center; vertical-align: middle; position: relative; margin: 0 auto 50px; }
 /* ==========================================================================
@@ -381,7 +467,7 @@ iframe {
   -webkit-box-shadow: 4px 4px 14px #000;
   box-shadow: 4px 4px 14px #000;
 
-  
+
   filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
 }
 img.round {
@@ -457,6 +543,33 @@ img.round {
 	transform: scale(0);
 }
 
+#carousel {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow:auto;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+
+}
+
+#carousel .slide {
+
+    display: inline-block;
+}
+#carousel::-webkit-scrollbar {
+    width: 1em;
+}
+
+#carousel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px white;
+}
+
+#carousel::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid white;
+}
 .ch-info h3 {
 	color: #fff;
 	text-transform: uppercase;
