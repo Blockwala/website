@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
 
+=======
+ /* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+ 
+>>>>>>> 28ba402dbe31a6546da95cf1fc2c5880634006f8
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
@@ -382,6 +387,41 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px; }
+
+/* ==========================================================================
+Products
+========================================================================== */
+.products { padding-left: 15px; }
+.bitguard-img {
+
+}
+.bitguard-desc-1 {
+	position:relative;
+	align-content: left;
+	top: 60px;
+	left: 120px;
+	font-size: 15px;
+	font-family: inherit;
+	font-weight: bold;
+	width: 200px;
+}
+
+.bitguard-para-1 {
+	position: relative;
+    text-align: right;
+    width: 200px;
+    top: 30px;
+    left: 120px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    color: rgb(140, 147, 152);
+    word-spacing: 1px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
 /* ==========================================================================
 Subscribe
 ========================================================================== */
@@ -619,3 +659,8 @@ img.round {
 .ch-item:hover .ch-info p {
 	opacity: 1;
 }
+img {
+    height: 700px;
+    width: 398px;
+	}
+
