@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <meta property="og:title" content="Blockwala" />
     <meta property="og:description" content="Shifting businesses to Blockchain" />
     <meta property="og:url" content="Bootstrap businesses on blockchain" />
@@ -56,17 +57,20 @@
     </header>
 
     <section class="hero" id="hero">
-        <div class="navbar_without_background">
-          <font color="#FFFFFF">
-              <div class="col-md-12 wp2 animated fadeInUp">
-                  <a href="#products" ><b>PRODUCTS</b></a>
-                  <a href="#team"style="margin-left:5px;" ><b>TEAM</b></a>
-                  <a href="#contact" style="margin-left:5px;"><b>CONTACT</b></a>
-                  <a href="https://medium.com/blockwala" target="_blank" style="margin-left:5px;"> <b> BLOGS</b></a>
-                  <a href="http://explorer.blockwala.io/ui/index/" target="_blank" style="margin-left:5px"><b>BTC EXPLORER</b></a>
-              </div>              
-            </font>
-          </div>
+
+          <div class=" navbar_without_background animated fadeInUp" align="left">
+             <font color="#FFFFFF">
+              <ul style="display:flex ; list-style-type: none;">
+                  <li style="height: 30px; line-height: 30px;"><a href="#products" ><b>PRODUCTS</b></a></li>
+                  <li style="height: 30px; line-height: 30px;"><a href="#team"style="margin-left:5px;" ><b>TEAM</b></a></li>
+                  <li style="height: 30px; line-height: 30px;"><a href="#contact" style="margin-left:5px;"><b>CONTACT</b></a></li>
+                  <li style="height: 30px; line-height: 30px;"><a href="https://medium.com/blockwala" target="_blank" style="margin-left:5px;"> <b> BLOGS</b></a></li>
+                  <li style="height: 30px; line-height: 30px;"><a href="http://explorer.blockwala.io/ui/index/" target="_blank" style="margin-left:5px"><b>BTC EXPLORER</b></a></li>
+              </ul>
+              </font>
+
+            </div>
+
 
         <div class="container">
             <div class="row">
@@ -279,7 +283,7 @@
             </div>
           </div>
         </div> -->
-        <section class="products text-center section-padding" id="products" style="margin-bottom:5px;background-color:#f3f5f8;">
+        <section class="products text-center section-padding" id="products" style="margin-bottom:5px;background-color:#f3f5f8; overflow-x: scroll">
               <div class="random" style="background-color:#f3f5f8;margin-left:auto;margin-right:auto;">
                      <h1 class="arrow">Products</h1>
                      <br/>
@@ -287,9 +291,10 @@
                      <h1 style="text-align:center;font-size:40px;"><b>BitGuard</b></h1>
                      <h1 style="font-size:15px;">Available on Android</h1>
                         <br>
-                     <div class="col-md-12"style="margin-bottom:40px;background-color:#f3f5f8;padding-bottom:40px">
-                          <div class="feature-wrapper" >
-                                 <div class="col-md-4 wp2 animated fadeInUp"style="margin-top:90px;">
+                     <div class="col-md-12" style="margin-bottom:40px;background-color:#f3f5f8;padding-bottom:40px; overflow-x: scroll;" 
+                     align="middle">
+                          <div class="feature-wrapper-table-responsive"  style="overflow-x:scroll;">
+                                 <div class=" content-mobile mobile-hide col-md-3 wp2 animated fadeInUp"style="margin-top:90px;">
                                     <div class="box_1" style="margin-top:80px;">
                                       <div class="box_1_1"style="float:right;margin-top:20px">
                                             <img src="./img/lock_icon.png" alt="secure" width="37" height="35">
@@ -310,7 +315,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-md-4 wp2 delay-05s animated fadeInUp" style="overflow-x: auto;">
+                                 <div class="col-md-6 wp2 delay-05s animated fadeInUp" style="overflow-x: auto;">
                                      <div class="image_wallet">
                                        <img src="./img/bitguard.png" alt="bitguard" width="455" height="830">
                                        <br>
@@ -323,13 +328,13 @@
                                        <br/>
                                    </div>
                                 </div>
-                                <div class="col-md-4 wp2 delay-1s animated fadeInUp" style=" margin-top:40px " >
+                                <div class=" content-mobile col-md-3 wp2 delay-1s animated fadeInUp" style=" margin-top:40px; float:left;" >
                                      <div class="box_1" style="margin-top:60px;">
                                          <div class="box_3_1"style="float:left">
                                            <img src="./img/qr_code_icon.png" alt="qr_code" width="35" height="35">
                                          </div>
-                                         <div class="box_3_2" style="width:150px;margin-top:20px;margin-left:45px;text-align:left">
-                                           <h1 style="font-size:30px;">Wallet <br> Connect</h1>
+                                         <div class="box_3_2" style="width:150px;margin-top:20px;text-align:left">
+                                           <h1 style="font-size:30px;">Wallet <br/> Connect</h1>
                                            <h3 style="font-size:15px;">Interact with other wallets on the web using the built-in QR code scanner. This is powered by the WalletConnect standard.</h3>
                                          </div>
                                      </div>
@@ -337,7 +342,7 @@
                                          <div class="box_4_1" style="float:left;">
                                            <img src="./img/lightning.png" alt="lightning" width="35" height="35">
                                          </div>
-                                         <div class="box_4_2"style="margin-top:0px; width:150px;margin-left:45px;text-align:left">
+                                         <div class="box_4_2"style="margin-top:0px; width:150px; text-align:left">
                                            <h1 style="font-size:30px;">Fast And <br> Easy</h1>
                                            <h3 style="font-size:15px;text-align:left">Send and receive all tokens quickly and easily. Lightning fast search and transaction history.</h3>
                                          </div>
@@ -556,8 +561,8 @@
             <div class="row">
               <div class="col-md-6">
                 <ul class="legals">
-                  <li><a href="#">Terms &amp; Conditions</a></li>
-                  <li><a href="#">Legals</a></li>
+                  <li><a href="http://blockwala.io/privacypolicy.htm">Terms &amp; Conditions</a></li>
+                  <li><a href="http://blockwala.io/privacypolicy.htm">Legals</a></li>
                 </ul>
               </div>
               <div class="col-md-6 credit">
