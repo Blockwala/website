@@ -41,8 +41,8 @@ body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-    font-family: 'Varela Round', sans-serif; 
+    overflow-x: hidden;
+    font-family: 'Varela Round', sans-serif;
 }
 
 /* ==========================================================================
@@ -324,6 +324,12 @@ white-space: normal;
   top: 380px;
   background: #55ACEE;
   color: white;
+}
+
+.float-gh {
+	top: 435px;
+	background: grey;
+	color:white;
 }
 
 
@@ -634,5 +640,3 @@ img.round {
     display: none;
   }
 }
-
-
