@@ -19,7 +19,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blockwala - Shifting businesses to Blockchain</title>
+    <title>Blockwala - Discover Decentralize Disrupt</title>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,35 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- </head>
+
+
+  <style media="screen">
+
+#navbar {
+background-color: #333;
+position: fixed;
+top: 0;
+width: 100%;
+display:block;
+transition: top 0.7s;
+}
+
+#navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 15px;
+text-decoration: none;
+font-size: 17px;
+}
+
+#navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+</style>
+  </head>
 
 
 <body style="overflow-x: auto;">
@@ -70,9 +98,32 @@
       </div>
     </header>
 
+    <div id="navbar">
+      <ul style=" list-style-type: none;">
+          <a href="#products" ><b>PRODUCTS</b></a>
+          <a href="#team"style="margin-left:5px;" ><b>TEAM</b></a>
+          <a href="#contact" style="margin-left:5px;"><b>CONTACT</b></a>
+          <a href="https://medium.com/blockwala" target="_blank" style="margin-left:5px;"> <b> BLOGS</b></a>
+          <a href="http://explorer.blockwala.io/ui/index/" target="_blank" style="margin-left:5px"><b>BTC EXPLORER</b></a>
+      </ul>
+    </div>
+
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-70px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
     <section class="hero" id="hero">
 
-          <div class=" navbar_without_background animated fadeInUp" align="left">
+          <!-- <div class=" navbar_without_background animated fadeInUp" align="left">
              <font color="#FFFFFF">
               <ul style="display:flex ; list-style-type: none;">
                   <li style="height: 30px; line-height: 30px;"><a href="#products" ><b>PRODUCTS</b></a></li>
@@ -83,7 +134,7 @@
               </ul>
               </font>
 
-            </div>
+            </div> -->
 
 
         <div class="container">
@@ -329,7 +380,7 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="col-md-6 wp2 delay-05s animated fadeInUp" style="overflow-x: auto;">
+                                 <div class="col-md-6 wp2 delay-05s animated fadeInUp">
                                      <div class="image_wallet">
                                        <img src="./img/bitguard.png" alt="bitguard" width="455" height="830">
                                        <br>
@@ -340,19 +391,20 @@
                                 </div>
                                 <div class=" content-mobile col-md-3 wp2 delay-1s animated fadeInUp" style=" margin-top:40px; float:left;" >
                                      <div class="box_1" style="margin-top:60px;">
-                                         <div class="box_3_1"style="float:left">
+                                         <div class="box_3_1"style="float:left;margin-top:40px;margin-right:18px;">
                                            <img src="./img/qr_code_icon.png" alt="qr_code" width="35" height="35">
                                          </div>
-                                         <div class="box_3_2" style="width:150px;margin-top:20px;text-align:left">
+                                         <div class="box_3_2" style="width:150px;margin-top:20px;text-align:left;float:left">
                                            <h1 style="font-size:30px;">Wallet <br/> Connect</h1>
                                            <h3 style="font-size:15px;">Interact with other wallets on the web using the built-in QR code scanner. This is powered by the WalletConnect standard.</h3>
                                          </div>
                                      </div>
-                                     <div class="box_1" style="margin-top:80px;">
-                                         <div class="box_4_1" style="float:left;">
+                                     <br>
+                                     <div class="box_1" style="margin-top:250px;">
+                                         <div class="box_4_1" style="float:left;margin-top:20px;margin-right:18px;">
                                            <img src="./img/lightning.png" alt="lightning" width="35" height="35">
                                          </div>
-                                         <div class="box_4_2"style="margin-top:0px; width:150px; text-align:left">
+                                         <div class="box_4_2"style="float:left;margin-top:0px; width:150px; text-align:left">
                                            <h1 style="font-size:30px;">Fast And <br> Easy</h1>
                                            <h3 style="font-size:15px;text-align:left">Send and receive all tokens quickly and easily. Lightning fast search and transaction history.</h3>
                                          </div>
@@ -370,7 +422,7 @@
                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nEtS-3g63FQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
 
-                     <div class=" box_1 delay-1s animated fadeInUp" style="margin-top:60px;vertical-align:middle;" align=center">
+                     <div class=" box_1 delay-1s animated fadeInUp" style="margin-top:60px;vertical-align:middle;" align="center">
                          <div style="width:100%; margin-top:20px;">
                            <center style="font-size:40px;"><b>Blockchain Explorer</b></center>
                            <br/>
@@ -398,11 +450,11 @@
       <section class="team text-center section-padding" id="team" style="width:100%;height:100%" >
           <div class="container" style="width:100%;height:100%">
 
-            <div class="row" style="background-color:">
-              <div class="col-md-12">
-                <h1 class="arrow">We're a team that adore what we do</h1>
-              </div>
-            </div>
+                <div class="row" style="background-color:">
+                    <div class="col-md-12">
+                        <h1 class="arrow">We're a team that adore what we do</h1>
+                    </div>
+                </div>
 
             <div class="rowTeam">
               <div class="team-wrapper">
@@ -417,7 +469,7 @@
                                <br>
                                 <p>Karan holds 5 years of industry experience in all stacks of technology and services. He has developed customer and partner ended products alike. They range from P2P chat, bringing organic traffic by improving API effeciency and Google ranking, Android and desktop apps, scalable backend solutions, data science, decentralized systems, cryptography etc.</p>
                                 <!--<img class="round" src="img/team-01.png" alt="Team Member">-->
-                              </div>
+                            </div>
                         </div>
 
                         <h2>Karan Ahuja <p>Co-Founder</p> </h2>
@@ -519,7 +571,7 @@
       <section class="subscribe text-center">
         <div class="container">
           <h1><i class="fa fa-paper-plane"></i><span>Drop your email, we will contact you</span></h1>
-          <form href="mailto:someone@example.com?Subject=Hello%20again" target="_top" target="_top" method="post" enctype="text/plain">
+          <form href="https://drive.google.com/open?id=1Sly_xpTO74Vd7qsN0v_uxJj5_QGVWwASuTlJQGFnzmQ" target="_top" target="_top" method="post" enctype="text/plain">
             <input type="text" name="" value="" placeholder="" required>
             <input type="submit" name="" value="Send">
           </form>
@@ -576,7 +628,7 @@
                 </ul>
               </div>
               <div class="col-md-6 credit">
-                <p></p>
+                <p><img src="./img/blockwala.png" alt="Logo" width="50" height="50"style="border-radius:10px"></p>
               </div>
             </div>
           </div>
